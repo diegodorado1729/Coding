@@ -24,6 +24,7 @@
 - `regedit`: Abre el editor de registro de Windows para realizar cambios en la configuración del sistema.
 - `diskpart`: Herramienta de gestión de discos para administrar particiones de disco.
 - `help`: Muestra información de ayuda sobre los comandos disponibles en la terminal.
+- `mklink <enlace> <destino>`: donde `<enlace>` es el nombre del enlace simbólico que estás creando. `<Destino>` es la ruta del archivo o carpeta original a la que quieres apuntar.
 
 # Visual Studio
 -`code <nombre del archivo>` : Abre el archivo en Visual Studio
