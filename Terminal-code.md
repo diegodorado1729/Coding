@@ -1,6 +1,51 @@
 # Codigo de la Terminal
+- `dir`: Lista los archivos y carpetas en el directorio actual.
+- `cd`: Cambia el directorio actual.
+- `mkdir`: Crea un nuevo directorio.
+- `del`: Elimina uno o más archivos.
+- `copy`: Copia archivos y directorios.
+- `move`: Mueve uno o más archivos de un lugar a otro.
+- `ren`: Renombra archivos y directorios.
+- `type`: Muestra el contenido de un archivo de texto.
+- `cls`: Limpia la pantalla de la terminal.
+- `exit`: Cierra la ventana de la terminal.
+- `echo`: Muestra mensajes de texto en la terminal.
+- `tasklist`: Muestra una lista de los procesos en ejecución.
+- `taskkill`: Termina un proceso en ejecución.
+- `ipconfig`: Muestra la configuración de red del sistema.
+- `ping`: Envía un paquete de datos a una dirección IP para verificar la conectividad de red.
+- `netstat`: Muestra estadísticas de red y conexiones de red.
+- `systeminfo`: Muestra información del sistema, como la versión de Windows, la configuración de hardware y más.
+- `wmic`: Permite acceder y mostrar información del sistema utilizando Windows Management Instrumentation (WMI).
+- `shutdown`: Apaga o reinicia el sistema.
+- `gpupdate`: Actualiza las políticas de grupo en un equipo.
+- `sfc`: Escanea y repara archivos de sistema corruptos en Windows.
+- `chkdsk`: Verifica y repara problemas en el disco duro.
+- `regedit`: Abre el editor de registro de Windows para realizar cambios en la configuración del sistema.
+- `diskpart`: Herramienta de gestión de discos para administrar particiones de disco.
+- `help`: Muestra información de ayuda sobre los comandos disponibles en la terminal.
 
-`mkdir {nombre_carpeta}` : creacion de una carpeta
+# Visual Studio
+-`code <nombre del archivo>` : Abre el archivo en Visual Studio
 
-
-`code {nombre del archivo}` : abre el archivo en Visual Studio
+# Uso Basico del Git
+- `git init`: Inicializa un nuevo repositorio Git en el directorio actual.
+- `git clone URL`: Clona un repositorio Git existente desde una URL remota.
+- `git add <archivo>`: Agrega cambios al área de preparación para el siguiente commit.
+- `git commit -m "mensaje"`: Crea un nuevo commit con los cambios en el área de preparación y un mensaje asociado.
+- `git commit -a -m "mensaje"`: Crea un nuevo commit con todos los cambios en el área de trabajo, sin necesidad de agregarlos explícitamente al área de preparación.
+- `git status`: Muestra el estado actual del repositorio Git, incluyendo archivos modificados, añadidos y eliminados.
+- `git log`: Muestra el historial de commits del repositorio.
+- `git branch`: Muestra una lista de ramas y muestra en cuál estás trabajando actualmente.
+- `git checkout <rama>`: Cambia a una rama específica.
+- `git merge <rama>`: Fusiona cambios desde una rama específica a la rama actual.
+- `git pull`: Obtiene cambios desde un repositorio remoto y los fusiona en tu rama local.
+- `git push`: Envía cambios locales al repositorio remoto.
+- `git remote -v`: Muestra las URL del repositorio remoto.
+- `git diff`: Muestra las diferencias entre los cambios sin confirmar y el estado actual del repositorio.
+- `git reset`: Deshace cambios en el área de preparación y/o el árbol de trabajo.
+- `git revert <commit>`: Revierte un commit específico, creando un nuevo commit que deshace los cambios introducidos por el commit original.
+- `git rm <archivo>`: Elimina un archivo del repositorio y del árbol de trabajo.
+- `git stash`: Almacena temporalmente los cambios en un área de almacenamiento para aplicarlos más tarde.
+- `git cherry-pick <commit>`: Aplica los cambios introducidos por un commit específico en la rama actual.
+- `git tag`: Lista, crea o elimina etiquetas.
