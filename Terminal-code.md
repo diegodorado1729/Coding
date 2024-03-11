@@ -1,3 +1,3 @@
 # Codigo de la Terminal
 
-[mkdir] {nombre_carpeta}: creacion de una carpeta
+`mkdir {nombre_carpeta}`: creacion de una carpeta
