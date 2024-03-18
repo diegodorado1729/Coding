@@ -32,4 +32,8 @@ Una Serie es una secuencia de datos, una lista. Se podria pensar que una Serie e
     2017 Sales    40
     Name: Product A, dtype: int64
     ```
-
+- Los nombres y los valores combiene colocarlos juntos en variables, para luego usar `pd.Series` de la siguiente manera
+  ```sales=['2015 Sales', '2016 Sales', '2017 Sales']
+     valores=[30, 35, 40]
+     pd.Series(valores, index=sales, name 'Product A')
+    ```
