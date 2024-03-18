@@ -8,7 +8,7 @@
 -
 
 # Pandas
-[Resumen sobre pandas](Python/pandas.md)
+[Resumen sobre pandas](https://github.com/diegodorado1729/Coding/blob/main/Python/pandas.md)https://github.com/diegodorado1729/Coding/blob/main/Python/pandas.md)
 
 
 
