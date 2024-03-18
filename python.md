@@ -14,6 +14,7 @@
   donde `number1` es el numero de valores a lo largo de `number2` columnas
 - `.head()`: comando para ver que hay en el DataFrame resultante
 - Hay dos objetos principales: `DataFrame` y `Series`
+- `dataframe_archive.to_csv("archive_name")`: para guardar el DataFrame como csv en el disco
   
 ## DataFrame
 Una DataFrame es una tabla. Esta conformada por una serie de arreglos con entradas individuales, cada una de las cuales tiene
