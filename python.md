@@ -30,5 +30,6 @@ Una Serie es una secuencia de datos, una lista. Se podria pensar que una Serie e
     ```2015 Sales    30
     2016 Sales    35
     2017 Sales    40
-    Name: Product A, dtype: int64```
+    Name: Product A, dtype: int64
+    ```
 
