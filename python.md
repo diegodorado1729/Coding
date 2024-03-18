@@ -9,4 +9,5 @@
 
 #Pandas
 -`import pandas as pd`: importar la libreria
-- Hay dos
+- Hay dos objetos principales: `DataFrame` y `Series`
+- 
