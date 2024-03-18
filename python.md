@@ -27,8 +27,8 @@ un cierto valor. Cada entrada corrsponde a una fila (o record) y a una columna.
 Una Serie es una secuencia de datos, una lista. Se podria pensar que una Serie es una DataFrame de una sola columna
 
 - `pd.Series([30, 35, 40], index=['2015 Sales', '2016 Sales', '2017 Sales'], name='Product A')`: sintaxis de una Serie
-  2015 Sales    30
-  2016 Sales    35
-  2017 Sales    40
-  Name: Product A, dtype: int64
+    `2015 Sales    30
+    2016 Sales    35
+    2017 Sales    40
+    Name: Product A, dtype: int64`
 
