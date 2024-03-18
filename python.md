@@ -8,7 +8,7 @@
 -
 
 # Pandas
--`import pandas as pd`: importar la libreria
+- `import pandas as pd`: importar la libreria
 - `pd.read_csv()`: funcion para leer datos en un DataFrame a partir de un CSV
 - `.shape`: comando para ver cuan grande es el DataFrame resultante. El formato es `(number1, number2)`
   donde `number1` es el numero de valores a lo largo de `number2` columnas
