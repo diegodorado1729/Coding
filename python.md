@@ -4,5 +4,9 @@
 -No es necesario declarar las variables ni decir que tipo son
 
 ## Variables
--`=`: operador asignacion
+- `=`: Operador asignacion
 -
+
+#Pandas
+-`import pandas as pd`: importar la libreria
+- Hay dos
