@@ -57,3 +57,15 @@ a la sintaxis usual en python.
 
 Cabe destacar que en `iloc` el primer elemento del rango esta incluido y ultimo esta excluido. Sin embargo en `loc`
 el primer y ultimo elemento estan incluidos.
+
+#### Manipulacion del indice
+- `set_index("title")`: coloca la columna `"title"` como indice del DataFrame
+
+#### Seleccion Condicional
+- `reviews.country == 'Italy'`: a partir de DataFrame reviews se obtiene una seccion de `True`/`False` de la columna country,
+dependiendo si el elemento es `Italy` o no.
+- Si se quieren solo estos datos usamos `loc`: `reviews.loc[reviews.country == 'Italy']` que extrae la informacion relevante
+asosiada a los elementos de la columna `country` que sean `Italy`
+- Si se quiere añadir alguna otra condicion para filtrar los datos se usa `&` y `|`
+    `reviews.loc[(reviews.country == 'Italy') & (otra-condicion) | (otra-condicion) & ...]`
+- 
