@@ -40,3 +40,24 @@ Una Serie es una secuencia de datos, una lista. Se podria pensar que una Serie e
      valores=[30, 35, 40]
      pd.Series(valores, index=sales, name 'Product A')
     ```
+-`ejem1.serie1` `ejem1['serie1']`: formas de extraer una serie `serie1` del DataFrame `ejem1`
+  - Si queremos un elemento en especifico: `ejem1['serie1'][34]`
+
+## Indexacion, Seleccion, Asignacion
+
+### Indexacion
+
+Pandas tiene sus propios operadores accessor: `loc` y `iloc`. Ambos operadores son primero fila, segundo columna, contrario
+a la sintaxis usual en python.
+
+#### iloc
+- `iloc`: operador indexacion basado en la indice de los datos
+- `reviews.iloc[0]`: selecciona la promera fila del DataFrame
+- `reviews.iloc[:, 0]`: selecciona la primera columna del DataFrame
+- `reviews.iloc[:3, 0]`: selecciona la primera columna pero solamente la primera, segunda y tercera fila.
+- `reviews.iloc[1:3, 0]`: selecciona la primera columna pero solamente la segunda y tercera fila.
+    -Es posible tambien usar una lista: `reviews.iloc[[0, 1, 2], 0]`
+- `reviews.iloc[-5:]`: selecciona las ultimas 5 filas
+
+#### loc
+- `loc`: operador indexacion basado en el label de los datos
