@@ -8,6 +8,7 @@
 -
 
 # Pandas
+[Resumen sobre pandas](Python/pandas.md)
 
 
 
