@@ -45,7 +45,7 @@ Una Serie es una secuencia de datos, una lista. Se podria pensar que una Serie e
 
 ## Indexacion, Seleccion, Asignacion
 
-### Indexacion
+### Indexacion y Seleccion
 
 Pandas tiene sus propios operadores accessor: `loc` y `iloc`. Ambos operadores son primero fila, segundo columna, contrario
 a la sintaxis usual en python.
@@ -61,3 +61,26 @@ a la sintaxis usual en python.
 
 #### loc
 - `loc`: operador indexacion basado en el label de los datos
+- `reviews.loc[0, 'country']`: selecciona el elemento de la fila `0` y la columna `country`
+- `loc` es util cuando tenemos informacion en las columnas descritas por su label
+
+Cabe destacar que en `iloc` el primer elemento del rango esta incluido y ultimo esta excluido. Sin embargo en `loc`
+el primer y ultimo elemento estan incluidos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
