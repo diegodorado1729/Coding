@@ -7,7 +7,7 @@
 - `=`: Operador asignacion
 -
 
-#Pandas
+# Pandas
 -`import pandas as pd`: importar la libreria
 - `pd.read_csv()`: funcion para leer datos en un DataFrame a partir de un CSV
 - `.shape`: comando para ver cuan grande es el DataFrame resultante. El formato es `(number1, number2)`
