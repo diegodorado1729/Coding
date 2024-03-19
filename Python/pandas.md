@@ -72,7 +72,7 @@ asosiada a los elementos de la columna `country` que sean `Italy`
 - `isnull()`: selecciona los valores vacios (`NaN`)
 - `notnull()`: selecciona los valores no vacios (`NaN`)
 
-#### Asignacion de datos
+### Asignacion de datos
 - `data['column1'] = 'text'`: asigna un valor constante `'text'` a la columna `column1`
 - `data['index_backwards'] = range(len(reviews), 0, -1)`: asigna valores iterativos ed la forma:
   ```
@@ -83,3 +83,27 @@ asosiada a los elementos de la columna `country` que sean `Italy`
   129970         1
   Name: index_backwards, Length: 129971, dtype: int64
   ```
+
+## Sumario de Funciones
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
