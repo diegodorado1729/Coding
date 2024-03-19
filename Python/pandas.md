@@ -113,11 +113,13 @@ Name: taster_name, dtype: object
 
 #### unique() y value_counts()
 -`name_data.column1.unique()`: devuelve una lista de los valores unicos de la columna `column1`
+
 -`name_data.column1.value_counts()`: devuelve una lista de valores unicos y cuan a menudo ocurren en la columna `column1`
 
 ### Maps
 -`map(lambda p: funtion)`: reescribe los valores p del input a los valores que indique `funtion`
-  -ej: `reviews.points.map(lambda p: p - 5)`: le resta 5 a los valores de la columna `points` de los datos `reviews`
+    -ej: `reviews.points.map(lambda p: p - 5)`: le resta 5 a los valores de la columna `points` de los datos `reviews`
+    
 
 
 
