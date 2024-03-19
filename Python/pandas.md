@@ -86,7 +86,26 @@ asosiada a los elementos de la columna `country` que sean `Italy`
 
 ## Sumario de Funciones
 
-
+### describe()
+- `name_data.column1.describe()`: genera un sumario de alto nivel de los atributos de la columna dada
+- `describe()` es 'type-aware', es decir que el output cambia basado en el tipo de datos que haya en el input
+Si son numeros el output tendra una pinta asi
+```
+count    129971.000000
+mean         88.447138
+             ...      
+75%          91.000000
+max         100.000000
+Name: points, Length: 8, dtype: float64
+```
+Si los datos son tipo string el output va a tener la pinta
+```
+count         103727
+unique            19
+top       Roger Voss
+freq           25514
+Name: taster_name, dtype: object
+```
 
 
 
