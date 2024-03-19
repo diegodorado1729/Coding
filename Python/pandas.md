@@ -161,6 +161,9 @@ points
 100     19
 Name: points, Length: 21, dtype: int64
 ```
+Es posible hacer esto mismo usando la funcion `size()` de la siguente manera:
+`reviews.groupby('points').size()`
+
 - `reviews.groupby('points').price.min()`: crea una serie donde una colemna son los puntos del mismo valor y la otra es el precio minimo
 ```
   points
