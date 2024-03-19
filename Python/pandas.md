@@ -6,6 +6,9 @@
 - `.head()`: comando para ver que hay en el DataFrame resultante
 - Hay dos objetos principales: `DataFrame` y `Series`
 - `dataframe_archive.to_csv("archive_name")`: para guardar el DataFrame como csv en el disco
+- `replace()`: este comando permite reemplazar un valor por otro
+    - `reviews.taster_twitter_handle.replace("@kerinokeefe", "@kerino")`: en este caso para toda la columna `'taster_twitter_..'`
+      los valores `"@kerinokeefe"` son reemplazados por `"kerino"`
   
 ## DataFrame
 Una DataFrame es una tabla. Esta conformada por una serie de arreglos con entradas individuales, cada una de las cuales tiene
@@ -203,6 +206,22 @@ Para ello, se va a usar los comandos `sort_...`
 - `.sort_values(by=['country','len'])`: ordena la columna seleccionada (en este caso `'country'`) en orden ascendente y
   luego ordena cada seccion segun la columna `'len'` de manera ascendente
 
+## Tipos de Datos y valores perdidos
+
+### Dtypes
+El tipo de datos de una columna de un DataFrame es conocido como `dtype`
+
+- `data.column1.dtype`: se obtiene el tipo de datos de la columna 1
+- `data.dtypes`: se obtiene el tipo de cada unoa de las columans del DataFrame
+- `data.column1.astype('type')`: cambia el tipo de la columna 1 a el tipo `'type'`
+
+### Data perdida (Missing Data)
+Los valores perdidos, o missing data, estas dados por el valor `NaN` "Not a Number" el cual es tipo `float64`. Pandas
+provee elgunos metodos especificos para missing data. Por ejemplo:
+
+- `reviews[pd.isnull(reviews.country)]`
+- `fillna()`: es un comando que permite reemplazar valores de missing data
+    - `reviews.region_2.fillna("Unknown")`: en este caso los `NaN` son reemplazados por `Unknown`
 
     
 
