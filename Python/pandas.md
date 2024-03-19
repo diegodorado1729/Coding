@@ -223,6 +223,30 @@ provee elgunos metodos especificos para missing data. Por ejemplo:
 - `fillna()`: es un comando que permite reemplazar valores de missing data
     - `reviews.region_2.fillna("Unknown")`: en este caso los `NaN` son reemplazados por `Unknown`
 
+## Renombrado
+
+- `rename()`: permite renombrar el indice y/o columna deseada
+    - `reviews.rename(columns={'points': 'score'})`: en este caso se renombra la columna `'points'` a `'score'`
+    - `reviews.rename(index={0: 'firstEntry', 1: 'secondEntry'})`: en este caso se renombran los indices 0 y 1
+- `rename_axis()`: renombra el nombre del atributo de las filas y/o columnas
+    - `reviews.rename_axis("wines", axis='rows')`: se cambia el nombre del atributo de las filas a `'wines'`
+    - `reviews.rename_axis("fields", axis='columns')`: se cambia el nombre del atributo de las columnas a `'fields'`
+
+## Combinar
+
+- `concat()`: une dos DataFrame
+    - `pd.concat([data1, data2])`: sintaxis del `concat()`
+- `join()`: concatena dos DataFrame que tengan un indice en comun
+```
+left = canadian_youtube.set_index(['title', 'trending_date'])
+right = british_youtube.set_index(['title', 'trending_date'])
+
+left.join(right, lsuffix='_CAN', rsuffix='_UK')
+```
+Los comandos `lsuffix` y `rsuffix` se usan ya que los nombre de las columnas de estos DataFrame son iguales, asi
+se puede diferenciar entre ambos datos. De lo contrario no son necesarios.
+  
+      
     
 
 
