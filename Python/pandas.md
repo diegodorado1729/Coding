@@ -147,6 +147,60 @@ Esta expresion tambien la entience Pandas:
 Length: 129971, dtype: object
 ```
 
+## Agrupacion: groupby()
+
+- `reviews.groupby('points').points.count()`: crea una serie con los mismos valores unicos de la columna `points`. Luego coloca en la 
+primera columna el valor de esos puntos y luego cuanta cuantos hay repetidos. El comando `value_counts()` es una forma mas corta de
+esta operacion de `groupby()`
+```
+points
+80     397
+81     692
+      ... 
+99      33
+100     19
+Name: points, Length: 21, dtype: int64
+```
+- `reviews.groupby('points').price.min()`: crea una serie donde una colemna son los puntos del mismo valor y la otra es el precio minimo
+```
+  points
+80      5.0
+81      5.0
+       ... 
+99     44.0
+100    80.0
+Name: price, Length: 21, dtype: float64
+```
+El comando `groupby()` se puede combinar tambien con el comando `apply()` para extraer alguna parte que nos interesa de la serie generada
+Por otro lado, tambien es posible escoger dos columnas: `groupby(['column1', 'column2',...])`
+El comando `agg()` puede ser util combinarlo con `groupby()` si se quieren aplicar varias funciones a la vez. Por ejemplo:
+```
+reviews.groupby(['country']).price.agg([len, min, max])
+
+              len	   min	  max
+country			
+Argentina     3800 	4.0	   230.0
+Armenia        2	  14.0	 15.0
+...	           ...	 ...	  ...
+Ukraine	       14  	6.0	    13.0
+Uruguay	       109 	10.0	 130.0
+```
+
+### Indice Multiple
+-`data_name.reset_index()`: le coloca indice a el DataFrame
+
+## Sorting
+
+Al tener un grupo/DataFrame en muchas ocaciones se tiene que organizar por algun aprametreo que se quiera.
+Para ello, se va a usar los comandos `sort_...`
+
+- `.sort_values(by='len')`: ordena la columna seleccionada (en este caso `'len'`) en orden ascendente
+- `.sort_values(by='len', ascending=False)`: ordena la columna seleccionada (en este caso `'len'`) en orden descendente
+- `.sort_indexby='len')`: ordena el DataFrame en base al indice
+- `.sort_values(by=['country','len'])`: ordena la columna seleccionada (en este caso `'country'`) en orden ascendente y
+  luego ordena cada seccion segun la columna `'len'` de manera ascendente
+
+
     
 
 
