@@ -90,7 +90,7 @@ asosiada a los elementos de la columna `country` que sean `Italy`
 - `name_data.column1.describe()`: genera un sumario de alto nivel de los atributos de la columna dada
 - `describe()` es 'type-aware', es decir que el output cambia basado en el tipo de datos que haya en el input.
 
-  Si son numeros el output tendra una pinta asi
+Si son numeros el output tendra una pinta asi
 ```
 count    129971.000000
 mean         88.447138
