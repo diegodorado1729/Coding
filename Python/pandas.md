@@ -43,11 +43,11 @@ a la sintaxis usual en python.
 
 #### iloc
 - `iloc`: operador indexacion basado en la indice de los datos
-- `reviews.iloc[0]`: selecciona la promera fila del DataFrame
+- `reviews.iloc[0]`: selecciona la primera fila del DataFrame
 - `reviews.iloc[:, 0]`: selecciona la primera columna del DataFrame
 - `reviews.iloc[:3, 0]`: selecciona la primera columna pero solamente la primera, segunda y tercera fila.
 - `reviews.iloc[1:3, 0]`: selecciona la primera columna pero solamente la segunda y tercera fila.
-    -Es posible tambien usar una lista: `reviews.iloc[[0, 1, 2], 0]`
+  -Es posible tambien usar una lista: `reviews.iloc[[0, 1, 2], 0]`
 - `reviews.iloc[-5:]`: selecciona las ultimas 5 filas
 
 #### loc
