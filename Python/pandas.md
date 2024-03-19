@@ -68,4 +68,18 @@ dependiendo si el elemento es `Italy` o no.
 asosiada a los elementos de la columna `country` que sean `Italy`
 - Si se quiere añadir alguna otra condicion para filtrar los datos se usa `&` y `|`
     `reviews.loc[(reviews.country == 'Italy') & (otra-condicion) | (otra-condicion) & ...]`
-- 
+- `isin(['column1','column2',...])`: selecciona los datos de las columnas `column1` y `column2` si estan en el DataFrame
+- `isnull()`: selecciona los valores vacios (`NaN`)
+- `notnull()`: selecciona los valores no vacios (`NaN`)
+
+#### Asignacion de datos
+- `data['column1'] = 'text'`: asigna un valor constante `'text'` a la columna `column1`
+- `data['index_backwards'] = range(len(reviews), 0, -1)`: asigna valores iterativos ed la forma:
+  ```
+  0         129971
+  1         129970
+           ...  
+  129969         2
+  129970         1
+  Name: index_backwards, Length: 129971, dtype: int64
+  ```
