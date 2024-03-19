@@ -109,16 +109,39 @@ Name: taster_name, dtype: object
 ```
 
 #### mean()
--`name_data.column1.mean()`: da la media de los valores del input, en este caso la columna `column1`
+- `name_data.column1.mean()`: da la media de los valores del input, en este caso la columna `column1`
 
 #### unique() y value_counts()
--`name_data.column1.unique()`: devuelve una lista de los valores unicos de la columna `column1`
+- `name_data.column1.unique()`: devuelve una lista de los valores unicos de la columna `column1`
 
--`name_data.column1.value_counts()`: devuelve una lista de valores unicos y cuan a menudo ocurren en la columna `column1`
+- `name_data.column1.value_counts()`: devuelve una lista de valores unicos y cuan a menudo ocurren en la columna `column1`
 
 ### Maps
--`map(lambda p: funtion)`: reescribe los valores p del input a los valores que indique `funtion`
-    - ej: `reviews.points.map(lambda p: p - 5)`: le resta 5 a los valores de la columna `points` de los datos `reviews`
+- `map(lambda p: funtion)`: reescribe los valores p del input a los valores que indique `funtion`
+   - ej: `reviews.points.map(lambda p: p - 5)`: le resta 5 a los valores de la columna `points` de los datos `reviews`
+- `apply(funtion, axis='columns')`: aplica la funcion `funtion` a cada fila de los datos
+- `apply(funtion, axis='index')`: aplica la funcion `funtion` a cada columna de los datos
+
+Otras formas que pandas entiende para reescribir los valores de una columna:
+
+```
+review_points_mean = reviews.points.mean()
+reviews.points - review_points_mean
+```
+Pandas ve esta expresion y entiende que tiene que restarle el valor de `review_points_mean` a cada elemento de la columna `points`
+
+Esta expresion tambien la entience Pandas:
+```
+>>reviews.country + " - " + reviews.region_1
+
+0            Italy - Etna
+1                     NaN
+               ...       
+129969    France - Alsace
+129970    France - Alsace
+Length: 129971, dtype: object
+```
+
     
 
 
