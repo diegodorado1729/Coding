@@ -108,8 +108,9 @@ freq           25514
 Name: taster_name, dtype: object
 ```
 
-#### mean()
+#### mean() y median()
 - `name_data.column1.mean()`: da la media de los valores del input, en este caso la columna `column1`
+- `name_data.column1.median()`: da la mediana de los valores del input, en este caso la columna `column1`
 
 #### unique() y value_counts()
 - `name_data.column1.unique()`: devuelve una lista de los valores unicos de la columna `column1`
