@@ -1,15 +1,15 @@
 Module varia
 
-Integer(4),  parameter         :: Lx        =  29          ! debe ser impar 
-Integer(4),  parameter         :: Ly        =  30          ! debe ser par 
-Integer(4),  parameter         :: Lz        =  30          ! debe ser par 
+Integer(4),  parameter         :: Lx        =  9          ! debe ser impar 
+Integer(4),  parameter         :: Ly        =  10          ! debe ser par 
+Integer(4),  parameter         :: Lz        =  10          ! debe ser par 
 Integer(4),  parameter         :: N         =  2*Lx*Ly*Lz  !
 Logical,     parameter         :: loop      =  .true.     ! tipo curva. .true. lazo de histéresis: .false. curva enfriamiento 
 Logical,     parameter         :: HT        =  .true.     ! tipo de lazo. .true. lazo de histéresis con campo enfriamiento. .false. lazo con curva inicial sin campo termalizacion igual a 0. 
 Logical,     parameter         :: fc        =  .true.     ! tipo curva. .true. field cooling: .false. zero field cooling 
 
-Integer(4),  parameter         :: t_mic     =  100          ! intervalo que se deja para promediar
-Integer(4),  parameter         :: tmax      =  10000        ! tiempo por punto
+Integer(4),  parameter         :: t_mic     =  10          ! intervalo que se deja para promediar
+Integer(4),  parameter         :: tmax      =  1000        ! tiempo por punto
 Integer(4),  parameter         :: Nsamp     =  1           ! Numero de lazos de histeresis orientación aleatoria 
 
 
